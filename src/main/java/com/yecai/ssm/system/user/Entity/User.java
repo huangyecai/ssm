@@ -1,4 +1,4 @@
-package com.yecai.ssh.system.user.Entity;
+package com.yecai.ssm.system.user.Entity;
 
 public class User {
 	private int id ;

@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yecai.ssh.system.user.Dao.UserDao">
+<mapper namespace="com.yecai.ssm.system.user.Dao.UserDao">
 
 	<!-- 根据编号获得投票 -->
-	<select id="get" resultType="com.yecai.ssh.system.user.Entity.User">
+	<select id="get" resultType="com.yecai.ssm.system.user.Entity.User">
 		SELECT
 		*
 		FROM sys_user a
 
 		WHERE a.id = #{id}
+	</select>
+	<select id="list" resultType="com.yecai.ssm.system.user.Entity.User">
+		SELECT
+		*
+		FROM sys_user a
+
 	</select>
 </mapper>

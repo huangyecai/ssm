@@ -1,4 +1,4 @@
-package com.yecai.ssh.system.common.Annotation;
+package com.yecai.ssm.system.common.Annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

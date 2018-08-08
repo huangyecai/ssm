@@ -10,7 +10,7 @@
                         http://www.springframework.org/schema/mvc    
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">  
     <!-- 自动扫描-->  
-    <context:component-scan base-package="com.yecai.ssh.system" />  
+    <context:component-scan base-package="com.yecai.ssm.system" />
     <!-- 引入配置文件-->  
     <bean id="propertyConfigurer"  
         class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">  
@@ -51,8 +51,8 @@
    <!-- 扫描basePackage下所有以@MyBatisDao注解的接口 -->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
-        <property name="basePackage" value="com.yecai.ssh"/>
-        <property name="annotationClass" value="com.yecai.ssh.system.common.Annotation.MyBatisDao"/>
+        <property name="basePackage" value="com.yecai.ssm"/>
+        <property name="annotationClass" value="com.yecai.ssm.system.common.Annotation.MyBatisDao"/>
     </bean>
     
     <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx-->  
